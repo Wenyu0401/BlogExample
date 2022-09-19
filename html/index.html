@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-3.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../jquery-1.11.1/jquery.js"></script>
+    <script src="../bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/details.css">
+    <link rel="stylesheet" href="../css/tag.css">
+	<link rel="stylesheet" href="../css/classify.css"/>
+	<link rel="stylesheet" href="../css/archive.css"/>
+	<link rel="stylesheet" href="../css/imgshow.css"/>
+	<link rel="stylesheet" href="../css/aboutAuther.css"/>
+	<link rel="stylesheet" href="../css/myMusic.css"/>
+</head>
+<body>
+    <!-- 菜单栏 -->
+    <div class="head">
+        <div class="container">
+            <!-- <div class="content"> -->
+            <h2 onclick="location.reload()" style="cursor: pointer;">IT咸鱼博客</h2>
+            <ul>
+                <li onclick="location.reload(),changeMenuState('menu_home')" id="menu_home" class="chooseMenu"><i class="glyphicon glyphicon-home"></i><a >博客首页</a></li>
+                <li onclick="classifyPage(),changeMenuState('menu_sort')" id="menu_sort"><i class="glyphicon glyphicon-th-list"></i><a>博客分类</a></li>
+                <li onclick="tagPage(),changeMenuState('menu_tag')" id="menu_tag"><i class="glyphicon glyphicon-tags"></i><a>博客标签</a></li>
+                <li onclick="archiveByDate(),changeMenuState('menu_archive')" id="menu_archive"><i class="glyphicon glyphicon-folder-open"></i><a>博客归档</a></li>
+                <li onclick="aboutAuther(),changeMenuState('menu_author')" id="menu_author"><i class="glyphicon glyphicon-user"></i><a>关于作者</a></li>
+            </ul>
+            <div class="search">
+                <input type="search" placeholder="搜索博客" id="search">
+                <i class="glyphicon glyphicon-search" onclick="onSearch()"></i>
+            </div>
+                
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <!-- 主体部分 -->
+    <div class="container" id="content">
+		<div class="col-md-12">
+			<!-- 轮播图 -->
+			<div class="img_box">
+				<!-- 分为两部分，图片和圆点 -->
+				<!-- 1.图片 -->
+				<img class="img1" src="../images/imgshow1.png">
+				<img class="img2" src="../images/imgshow2.png" >
+				<img class="img3" src="../images/imgshow3.png" >
+				<!-- 2.圆点 -->
+				<!-- 图片上的圆点，随图片轮播而改变，当指向原点时调到指定的图片 -->
+				<div class="li-cotainer">
+					<li class="ls"></li>
+					<li></li>
+					<li></li>
+				</div>
+			</div>
+		</div>
+        <div class="row">
+            <div class="col-md-9">
+				<!-- <div class="center" id="center">
+					<button type="button" onclick="showcclassifyView()">BUTTON</button>
+				</div> -->
+                <div class="content content_left">
+                    <div class="content_head">
+                        <div class="blog_list"><i class="glyphicon glyphicon-list"></i>博客列表</div>
+                        <div class="blog_num">共<span id="total">&nbsp;0&nbsp;</span>篇</div>
+                    </div>
+                    <div id="contentList">
+                        <!--<div class="content_list">
+                             <div class="item">
+                                <h3><a href="">LeetCode-003两数之和</a></h3>
+                                <p><a href="">给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标</a></p>
+                                <div>
+                                    <div class="item_img"><img src="./images/avatar.jpg" alt=""></div>
+                                    <div class="item_name">小张</div>
+                                    <div class="item_time"><i class="glyphicon glyphicon-calendar"></i>2022-09-14</div>
+                                    <div class="item_num"><i class="glyphicon glyphicon-eye-open"></i>59</div>
+                                    <div class="item_sign">学习笔记</div>
+                                </div>
+                            </div>
+                            <div class="imgAbout">
+                                <img src="./images/about.jpeg" alt="">
+                            </div>
+                            <div class="line"></div>
+                        </div> -->
+                    </div>
+					<div  id="nextPrevious" class="next_previous" >
+						<button type="button" onclick="previous()" class="previous_button"><span>上一页</span></button>
+						<button type="button" onclick="next()" class="next_button"><span>下一页</span></button>
+						<div class="pageclass">
+							第<span id="pageID">
+								1
+							</span>&nbsp;/&nbsp;<span id="sumPageID">1</span>页
+						</div>
+					</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="content content1">
+                    <div class="content_head">
+                        <div><i class="glyphicon glyphicon-list"></i>博客分类</div>
+                        <div class="more">更多<i class="glyphicon glyphicon-menu-right"></i></div>
+                    </div>
+					
+                    <div class="content_list " >
+                        <ul id="classify_index">
+                            <!-- <li>教程<span><div class="horn"></div>5</span></li>
+                            <li>学习笔记<span><div class="horn"></div>6</span></li>
+                            <li>面试整理<span><div class="horn"></div>8</span></li>
+                            <li>程序人生<span><div class="horn"></div>5</span></li>
+                            <li>踩坑记录<span><div class="horn"></div>2</span></li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="content content2">
+                    <div class="content_head">
+                        <div><i class="glyphicon glyphicon-tags"></i>博客标签</div>
+                        <div onclick="tagPage()" class="more">更多<i class="glyphicon glyphicon-menu-right"></i></div>
+                    </div>
+                    <div class="content_box content_list">
+                        <ul class="content_tag" id="content_tag_list">
+                            <!-- <li><span><div class="horn"></div>html</span></li>
+                            <li><span><div class="horn"></div>css</span></li>
+                            <li><span><div class="horn"></div>js</span></li>
+                            <li><span><div class="horn"></div>Linux 2</span></li>
+                            <li><span><div class="horn"></div>Linux 3</span></li> -->
+                        </ul>
+                    </div>
+                </div>
+                <div class="content content3">
+                    <div class="content_head">
+                        <div><i class="glyphicon glyphicon-bookmark"></i>博客推荐</div>
+                    </div>
+                    <div class="advise_list content_list">
+                        <ul id="content_list_ul">
+                            <!-- <li>教程</li>
+                            <li>学习笔记</li>
+                            <li>面试整理</li>
+                            <li>程序人生</li>
+                            <li>踩坑记录</li> -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="container">
+            <p>网站访问量:<span id="number">1360</span></p>
+            <p>已持续运行时间:<span id="time">365</span>天</p>
+            <div class="footer_container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="../images/qq.jpg" alt="">
+                    </div>
+                    <div class="col-md-3">
+                        <h4>最新博客</h4>
+                        <p>气温骤降，原因或是拉尼娜现象</p>
+                        <p>历史上的今天</p>
+                        <p>疫情最新状况</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>联系作者</h4>
+                        <p>邮箱:1234567891@qq.com</p>
+                        <p>qq:1234567891</p>
+                        <p>手机号:12345678912</p>
+                        <p><a href="">GitHub:xiaozhang</a></p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Blog</h4>
+                        <p>每个人都有属于自己的一片森林:</p>
+                        <p>也许我们从来不曾去过</p>
+                        <p>但它一直在那里，总会在那里。</p>
+                    </div>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="footer_bottom">
+                <p>Copyright© 2022-09-14 IT小张 All Rights Reserved</p>
+                <p>通讯地址：四川省成都市温江区</p>
+                <p><a href="http://www.baidu.com">京ICP备20xxxxxxx号</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="../js/data.js"></script>
+    <script src="../js/index.js"></script>
+	<script src="../js/classify_page.js"></script>
+    <script src="../js/tag_page.js"></script>
+    <script src="../js/search.js"></script>
+    <script src="../js/details.js"></script>
+	<script src="../js/archive.js"></script>
+	<script src="../js/imgshow.js"></script>
+	<script src="../js/aboutAuther.js"></script>
+	<script src="../js/myMusic.js"></script>
+</body>
+</html>

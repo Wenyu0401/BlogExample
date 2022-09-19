@@ -1,0 +1,96 @@
+/* 头部样式 */
+.head{
+    width: 100%;
+    height: 71px;
+    background-color: #1b1c1d;
+    position: relative;
+    border: 1px solid #d4d4d5;
+    
+}
+.head>.container{
+    width: 100%;
+    height: 71px;
+}
+/* .head>.container>.content{
+    width: 90%;
+    height: 71px;
+} */
+.head h2{
+    font-weight: bold;
+    color: #00B4Ad;
+    float: left;
+    margin-top: 17px;
+    margin: 17px 20px 0 40px;
+}
+.head ul{
+    width: 730px;
+    height: 71px;
+    float: left;
+    margin: 0 20px;
+}
+.head ul>li{
+    float: left;
+    color: rgba(255,255,255,.7);
+    height: 40px;
+    width: 125px;
+    line-height: 40px;
+    text-align: center;
+    margin-right: 20px;
+    margin-top: 14px;
+    cursor: pointer;
+}
+.head ul>li>i{
+    margin-right: 8px;
+}
+.head ul>li>a{
+    color: rgba(255,255,255,.7);
+}
+.head ul>li:hover{
+    color: white;
+    background-color: rgba(255,255,255,.15);
+}
+.head ul>li:hover a{
+    color: white;
+}
+/* .head ul>li:first-child{
+    color: white;
+    background-color: rgba(255,255,255,.15);
+}
+.head ul>li:first-child>a{
+    color: white;
+} */
+.chooseMenu{
+    color: white !important;
+    background-color: rgba(255,255,255,.15) !important;
+}
+.chooseMenu>a{
+    color: white !important;
+}
+.head>.container>.search{
+    position: absolute;
+    right: 70px;
+    top: 20px;
+}
+#search{
+    background-color: rgba(255,255,255,.7);
+    border-radius: 20px;
+    text-indent: 20px;
+    height: 32px;
+    width: 200px;
+    border: 0;
+    /* margin: 20px 10px 0px 30px;  */
+}
+.head>.container>.search>i{
+    color: #1b1c1d;
+    font-size: 20px;
+    position: absolute;
+    display: block;
+    padding-left: 10px;
+    right: 14px;
+    top: 7px;
+    border-left: 2px solid #D4D4D5;
+    cursor: pointer;
+}
+.head>.container>.search>i:hover{
+    color:white
+}

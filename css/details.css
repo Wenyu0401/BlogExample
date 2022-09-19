@@ -1,0 +1,215 @@
+.details_content_head{
+    width: 100%;
+    height: 55px;
+    padding: 10px;
+    border-bottom: 1px solid #d4d4d5;
+}
+.details_content_head ul{
+    width: 80%;
+}
+.details_content_head ul>li{
+    float: left;
+    width: 110px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #B5B5B5;;
+}
+.details_content_head ul>li img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-bottom: 4px;
+    margin-right: 8px;
+}
+.details_content_head ul>li>span{
+    font-weight: bold;
+    color: black;
+}
+.details_content_head ul>li>i{
+    margin-right: 6px;
+}
+.details_img{
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    border-bottom: 1px solid #d4d4d5;
+}
+.details_img img{
+    width: 100%;
+    border-radius: 5px;
+}
+.details_text{
+    margin: 20px 60px;
+
+}
+.details_text h2{
+    margin-top: 60px;
+    margin-bottom: 20px;
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+}
+.details_tag{
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+    /* margin-left: 4px; */
+}
+.details_tag>div{
+    display: inline-block;
+    padding: 4px 10px;
+    margin-left: 20px;
+    width: auto;
+    height: auto;
+    background-color: white;
+    color: #00B5AD;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 1px solid #00B5AD;
+    position: relative;
+}
+.details_tag>div>span{
+    display: inline-block;
+    /* float: left; */
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-left: 1px solid #00B5AD;
+    border-bottom: 1px solid #00B5AD;
+    transform: rotate(45deg);
+    position: absolute;
+    left: -8px;
+    top: 8px;
+}
+.details_reward{
+    width: 100%;
+    height: auto;
+    margin: 30px 0;
+}
+
+.details_reward>button{
+    display: block;
+    border: 1px solid #F2711B;
+    color: #F2711B;
+    width: 94px;
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    border-radius: 50px;
+    margin: 0 auto;
+    background-color: white;
+}
+.details_author{
+    width: 100%;
+    height: auto;
+    border: 1px solid #A3C293;
+    position: relative;
+}
+.details_author>ul{
+    list-style: disc;
+    width: 90%;
+    margin: 40px auto;
+}
+.details_author>ul>li{
+    color: #4C7D4C;
+    margin-bottom: 10px;
+}
+.details_author>ul>li:last-child{
+    list-style: none;
+    float: right;
+}
+.details_author>ul>li>img{
+    width: 110px;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+}
+.details_remark{
+    width: 95%;
+    margin: 20px auto;
+    border: 1px solid #D4D4D5;
+    border-radius: 5px;
+    border-top: 2px solid #08B6AF;
+    padding: 20px;
+    position: relative;
+}
+.details_remark_head{
+    border-bottom: 1px solid #D4D4D5;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.details_remark textarea{
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    outline: none;
+    resize: vertical;
+}
+textarea::placeholder{
+    padding: 14px 20px;
+}
+.details_commit{
+    width: 100%;
+    height: auto;
+    /* position: relative; */
+    width: 100%;
+    height: 60px;
+    /* left: 0;
+    top: 0; */
+}
+.input_username,.input_email{
+    border: 1px solid #D4D4D5;
+    width: 210px;
+    float: left;
+    border-radius: 5px;
+    margin: 20px 20px 20px 0;
+    height: 38px;
+    position: relative;
+    overflow: hidden;
+}
+.input_username>i,.input_email>i{
+    color: #D4D4D5;
+    padding: 10px;
+}
+.input_username>input,.input_email>input{
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 167px;
+    height: 36px;
+    margin-top: -2px;
+    border: 0;
+}
+.input_email>input::placeholder{
+    color: #D4D4D5;
+}
+.input_username>input::placeholder{
+    color: #D4D4D5;
+}
+.commit_button{
+    width: 100px;
+    float: left;
+    border-radius: 5px;
+    margin: 20px 20px 20px 0;
+    height: 38px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    line-height: 38px;
+    background-color: #00B5AD;
+    color: white;
+    cursor: pointer;
+}
+.commit_button>i{
+    position: absolute;
+    left: 18px;
+    top: 11px;
+}
+.commit_button>span{
+    position: absolute;
+    right: 20px;
+    top: 0;
+}

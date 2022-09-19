@@ -1,0 +1,63 @@
+/* 底部样式 */
+.footer{
+    width: 100%;
+    height: auto;
+    background-color: #1b1c1d;
+}
+.footer>.container>p{
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin: 20px auto;
+}
+.footer_bottom>p{
+    color: rgba(255, 255, 255, .7);
+    text-align: center;
+}
+.footer_bottom>p>a{
+    color: rgba(255, 255, 255, .7);
+    text-decoration: none;
+}
+.footer_bottom>p>a:hover{
+    color: rgba(255, 255, 255, .7);
+}
+.footer_container>.row>.col-md-3{
+    height: 250px;
+    padding: 15px;
+    border-right: 1px solid #323334;
+    position: relative;
+}
+.footer_container>.row>.col-md-3>img{
+    width: 70%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.footer_container>.row>.col-md-3:last-child{
+    border-right: none;
+}
+.line{
+    width: 100%;
+    height: 2px;
+    background-color: #323334;
+    margin: 20px 0 30px;
+}
+.footer_container>.row>.col-md-3>h4{
+    color: #fff;
+    text-align: center;
+}
+.footer_container>.row>.col-md-3 p{
+    text-align: center;
+    color: rgba(255, 255, 255, .7);
+    margin: 20px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.footer_container>.row>.col-md-3 p>a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, .7);
+}
+.footer_container>.row>.col-md-3 p>a:hover{
+    color: rgba(255, 255, 255, .7);
+}

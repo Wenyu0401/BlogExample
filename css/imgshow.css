@@ -1,0 +1,59 @@
+.img_box{
+	width: 100%;
+	height: 400px;
+	margin:0 auto;
+	position: relative;
+	border-radius: 5px;
+	overflow: hidden;
+	margin-top: 30px;
+}
+/* 设置图片格式 */
+.img_box img{
+	width: 100%;
+	height: 406px;
+	margin: 0 auto;
+}
+/* 将图片的类型定义为块级元素时会将图片显示出来 */
+.showImg{
+	display: block;
+}
+/* 将图片的类型定义为none时图片会被隐藏 */
+.hiddenImg{
+	display: none;
+}
+/* 设置第一个图片为显示，其余图片不显示出来 */
+.img1{
+	display: block;
+}
+.img2{
+	display: none;
+}
+.img3{
+	display: none;
+}
+.li-cotainer{
+	width: 130px;
+	position: absolute;
+	bottom: 0;
+	top: 370px;
+	left:507px;
+	font-size: 0;
+}
+/* 设置li标签，将li标签设置行内块级，边框，大小，并且是圆形 */
+.li-cotainer>li{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border: 1px solid #FFFFFF;
+	border-radius: 50%;
+	margin: 10px ;
+}
+/* 设置li标签的被选中颜色或者跟随轮播的颜色 */
+.ls{
+	background-color: #ffffff;
+	border: 1px solid #FFFFFF;
+}
+#imgShowCol{
+	margin-left: 10px;
+	padding: 0;
+}

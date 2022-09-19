@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-3.4.1-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./jquery-1.11.1/jquery.js"></script>
+    <script src="./bootstrap-3.4.1-dist/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/details.css">
+</head>
+<body>
+    <!-- 菜单栏 -->
+    <div class="head">
+        <div class="container">
+            <!-- <div class="content"> -->
+                <h2>IT小张博客</h2>
+                <ul>
+                    <li><i class="glyphicon glyphicon-home"></i><a href="">博客首页</a></li>
+                    <li><i class="glyphicon glyphicon-th-list"></i><a href="">博客分类</a></li>
+                    <li><i class="glyphicon glyphicon-tags"></i><a href="">博客标签</a></li>
+                    <li><i class="glyphicon glyphicon-folder-open"></i><a href="">博客归档</a></li>
+                    <li><i class="glyphicon glyphicon-user"></i><a href="">关于作者</a></li>
+                </ul>
+                <div class="search">
+                    <input type="search" placeholder="搜索博客" id="search">
+                    <i class="glyphicon glyphicon-search" onclick="onSearch()"></i>
+                </div>
+                
+            <!-- </div> -->
+        </div>
+    </div>
+
+    <!-- 主体部分 -->
+    <div class="container" id="content">
+        <!-- <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="content">
+                    <div class="details_content_head">
+                        <ul>
+                            <li><img src="./images/avatar.jpg" alt=""><span>小张</span></li>
+                            <li><i class="glyphicon glyphicon-calendar"></i>2022-5-22</li>
+                            <li><i class="glyphicon glyphicon-eye-open"></i>59</li>
+                        </ul>
+                    </div>
+                    <div id="details_content">
+                        <div class="details_img">
+                            <img src="./images/about.jpeg" alt="">
+                        </div>
+                    </div>
+                    <div class="details_box">
+                        <div class="details_text">
+                            <h2>LeetCode-001 两数之和</h2>
+                            <p>题目来源于 LeetCode 上第 1 号问题：两数之和。题目难度为 Easy，目前通过率为 45.8% 。</p>
+                            <h3>题目描述</h3>
+                            <p>给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那 两个 整数，并返回他们的数组下标。</p>
+                            <p>你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。</p>
+                            <h3>示例：</h3>
+                            <p>给定 nums = [2, 7, 11, 15], target = 9</p>
+                            <p>因为 nums[0] + nums[1] = 2 + 7 = 9 所以返回 [0, 1]</p>
+                            <h3>代码实现</h3>
+                            <pre>
+                                <code>
+                                    public class Test{
+                                        public static void main(String[] args){
+                                            System.out.println("Hello World");
+                                        }
+                                    }
+                                </code>
+                            </pre>
+                            <div class="details_tag">
+                                <div><span></span>LeetCode</div>
+                                <div><span></span>数据结构与算法</div>
+                            </div>
+                            <div class="details_reward"><button>赞赏</button></div>
+                            
+                        </div>
+                        <div class="details_author">
+                            <ul>
+                                <li>作者:&nbsp;&nbsp;<span>小张</span>&nbsp;&nbsp;(<a>联系作者</a>)</li>
+                                <li>发表时间:&nbsp;&nbsp;<span>2022-09-15 22:42</span></li>
+                                <li><img src="./images/wechat.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                        <form action="" method="get">
+                            <div class="details_remark">
+                                <div class="details_remark_head">评论</div>
+                                <textarea placeholder="请输入评论信息"></textarea>
+                                <div class="details_commit">
+                                    <div class="input_username">
+                                        <i class="glyphicon glyphicon-user"></i>
+                                        <input type="text" placeholder="姓名">
+                                    </div>
+                                    <div class="input_email">
+                                        <i class="glyphicon glyphicon-envelope"></i>
+                                        <input type="text" placeholder="邮箱">
+                                    </div>
+                                    <div class="commit_button" onclick="">
+                                        <i class="glyphicon glyphicon-pencil"></i>
+                                        <span>评论</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+        <div class="container">
+            <p>网站访问量:<span id="number">1360</span></p>
+            <p>已持续运行时间:<span id="time">365</span>天</p>
+            <div class="footer_container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="./images/qq.jpg" alt="">
+                    </div>
+                    <div class="col-md-3">
+                        <h4>最新博客</h4>
+                        <p>气温骤降，原因或是拉尼娜现象</p>
+                        <p>历史上的今天</p>
+                        <p>疫情最新状况</p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>联系作者</h4>
+                        <p>邮箱:1234567891@qq.com</p>
+                        <p>qq:1234567891</p>
+                        <p>手机号:12345678912</p>
+                        <p><a href="">GitHub:xiaozhang</a></p>
+                    </div>
+                    <div class="col-md-3">
+                        <h4>Blog</h4>
+                        <p>每个人都有属于自己的一片森林:</p>
+                        <p>也许我们从来不曾去过</p>
+                        <p>但它一直在那里，总会在那里。</p>
+                    </div>
+                </div>
+                <div class="line"></div>
+            </div>
+            <div class="footer_bottom">
+                <p>Copyright© 2022-09-14 IT小张 All Rights Reserved</p>
+                <p>通讯地址：四川省成都市温江区</p>
+                <p><a href="http://www.baidu.com">京ICP备20xxxxxxx号</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="./js/index.js"></script>
+    <script src="./js/search.js"></script> -->
+</body>
+</html>

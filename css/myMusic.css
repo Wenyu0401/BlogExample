@@ -1,0 +1,131 @@
+*{
+			margin: 0;
+			padding: 0;
+		}
+		ul,ol{
+			list-style: none;
+		}
+		a{
+			text-decoration: none;
+		}
+		body{
+			background:url(./images/bg.png);
+			font-size: 16px;
+		}
+			.col-md-8{
+				border: 1px solid gray !important;
+				border-radius: 10px !important;
+				width: 865px !important;
+				margin-left: 62px !important;
+			}
+			.music_content_head{
+				margin-left: -13px !important;
+				width: 846px !important;
+				height: 50px !important;
+				margin: 4px 0 !important;
+				border-bottom: 1px solid gray !important;
+			}
+			.music_content_head>div{
+				float: left !important;
+			}
+			.music_head_left{
+				width: 40% !important;
+				height: 40px !important;
+				color: #00b5ad !important;
+				font-size: 24px !important;
+			}
+			.music_head_left>i{
+				margin: 10px 15px !important;
+			}
+			.music_head_right{
+				width: 8% !important;
+				height: 40px !important;
+				margin: 0px 0px 0px 438px !important;
+				line-height: 38px !important;
+			}
+			.music_head_right>span{
+				font-size: 25px !important;
+				color: orange!important;
+			}
+			.music_list{
+				float: left !important;
+			}
+			.music_img{
+				float: left !important;
+				width: 224px !important;
+				height: 112px !important;
+				margin-top: -88px !important;
+				
+			}
+			.music_img>img{
+				position: relative !important;
+				width: 100% !important;
+				height: 100% !important;
+				margin-left: 20px !important;
+				border-radius: 5px !important;
+				/* margin: 10px 10px 10px 0px; */
+			}
+			/* #content_box{
+				position: relative;
+			} */
+		
+			.music_item>h3>a{
+				color: #000000 !important;
+				font-size: 24px !important;
+			}
+			/* #content_box{
+				margin: 50px auto;
+			} */
+			.music_content_list{
+				margin: 50px auto !important;
+				position: relative !important;
+			}
+			.music_item{
+				width: 600px !important;
+			}
+			.music_item>p>a{
+				color: #000000 !important;
+			}
+			.music_item>.music_list{
+				width: 600px !important;
+				height: 50px !important;
+			}
+			.music_item>.music_list>div{
+				float: left !important;
+			}
+			.music_item>.music_list>div>img{
+				width: 20px !important;
+				height: 20px !important;
+				border-radius: 50% !important;
+			}
+			.music_item_name{
+				margin-left: 10px !important;
+				color: lightseagreen !important;
+			}
+			.music_item_time{
+				margin-left: 20px !important;
+				color: grey!important;
+			}
+			.music_item_num{
+				margin-left: 20px;
+				color: grey;
+			}
+			.music_item_sign{
+				margin-left: 135px;
+				border: 2px solid lightseagreen;
+				border-radius: 4px;
+				color: lightseagreen;
+			}
+			.music_item_line{
+				height: 1px;
+				background-color: gainsboro;
+				margin-top: 75px;
+			}
+			/* 特效 */
+			.auther_right_content_right>img:hover{
+				transform: scale(1.5) translate(-150px,50px);
+				transition: all 0.2s linear 0.2s;
+			}
+			.auther_right_content_right>img{
+				transition: all 0.2s linear 0.2s;
+			}
