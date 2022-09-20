@@ -8,10 +8,10 @@
 		a{
 			text-decoration: none;
 		}
-		body{
+/* 		body{
 			background:url(./images/bg.png);
 			font-size: 16px;
-		}
+		} */
 			.col-md-8{
 				border: 1px solid gray !important;
 				border-radius: 10px !important;
