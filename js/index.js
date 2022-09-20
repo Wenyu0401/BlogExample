@@ -37,7 +37,7 @@ function loadIndex(){
 	                    '<div class="item_name">'+data[i].username+'</div>'+
 	                    '<div class="item_time"><i class="glyphicon glyphicon-calendar"></i>'+data[i].time+'</div>'+
 	                    '<div class="item_num"><i class="glyphicon glyphicon-eye-open"></i>'+data[i].num+'</div>'+
-	                    '<div class="item_sign" >'+data[i].sign+'</div>'+
+	                    '<div class="item_sign" onclick = "classifyPage(),choseOne(\''+data[i].sign+'\',null)" >'+data[i].sign+'</div>'+
 	                    '<div class="item_tag">'+
 	                        '<ul>'+
 	                            titleTag +
